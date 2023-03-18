@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>메인관리 > 상단팝업 | ADMIN</title>
+    <title>메인관리 > 상단배너 | ADMIN</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -112,10 +112,12 @@
                   <span>메인관리</span>
                 </a>
                 <ul>
-                  <li class="active">
+                  <li>
                     <a href="/top-popup-list.html">상단팝업</a>
                   </li>
-                  <li><a href="/top-banner-list.html">상단배너</a></li>
+                  <li class="active">
+                    <a href="/top-banner-list.html">상단배너</a>
+                  </li>
                   <li><a href="index5.html">기념관&선원</a></li>
                   <li><a href="index6.html">설악불교문학관</a></li>
                 </ul>
@@ -167,12 +169,12 @@
           <div class="block-header">
             <div class="row clearfix">
               <div class="col-md-6 col-sm-12">
-                <h1>상단팝업</h1>
+                <h1>상단배너</h1>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">메인관리</li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      상단팝업
+                      상단배너
                     </li>
                   </ol>
                 </nav>
@@ -230,13 +232,57 @@
                         </div>
                       </div>
                       <div class="col-lg-2 col-md-4 col-sm-6">
-                        <h6>팝업텍스트</h6>
+                        <h6>배너명</h6>
                         <div class="form-group">
                           <input
                             type="text"
                             class="form-control"
                             placeholder="Search"
                           />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h6>기간</h6>
+                        <div class="form-group pl-3">
+                          <!-- radio -->
+                          <div class="row">
+                            <label class="fancy-radio"
+                              ><input
+                                name="date"
+                                value="1"
+                                type="radio"
+                                checked
+                              /><span><i></i>전체</span></label
+                            >
+                            <label class="fancy-radio"
+                              ><input name="date" value="2" type="radio" /><span
+                                ><i></i>지정</span
+                              ></label
+                            >
+                            <!-- date -->
+                            <input
+                              class="form-control date"
+                              data-provide="datepicker"
+                              data-date-autoclose="true"
+                              data-date-format="yyyy/mm/dd"
+                            />
+                            <div class="input-group-prepend right mr-2">
+                              <span class="input-group-text"
+                                ><i class="icon-calendar"></i
+                              ></span>
+                            </div>
+                            <input
+                              class="form-control date"
+                              data-provide="datepicker"
+                              data-date-autoclose="true"
+                              data-date-format="yyyy/mm/dd"
+                            />
+                            <div class="input-group-prepend right">
+                              <span class="input-group-text"
+                                ><i class="icon-calendar"></i
+                              ></span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-2 col-md-4 col-sm-6 ml-auto">

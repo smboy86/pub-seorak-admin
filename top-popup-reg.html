@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>메인관리 > 상단팝업 등록하기 | ADMIN</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="Oculux Bootstrap 4x admin is super flexible, powerful, clean &amp; modern responsive admin dashboard with unlimited possibilities."
+    />
+    <meta name="author" content="GetBootstrap, design by: puffintheme.com" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- VENDOR CSS -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/vendor/animate-css/vivify.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css"
+    />
+    <link
+      href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/Eonasdan/tempus-dominus@master/dist/css/tempus-dominus.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./assets/css/seorak.css" />
+    <link rel="stylesheet" href="./assets/css/site.min.css" />
+  </head>
+  <body class="theme-cyan font-montserrat light_version">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+      <div class="loader">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+      </div>
+    </div>
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+
+    <div id="wrapper">
+      <!-- <div id="particles-js"></div> -->
+      <!-- ######  TopHeader Box -->
+      <nav class="navbar top-navbar">
+        <div class="container-fluid">
+          <div class="navbar-left">
+            <div class="navbar-btn">
+              <a href="index.html"> 설악불교문학관 ADMIN</a>
+              <button type="button" class="btn-toggle-offcanvas">
+                <i class="lnr lnr-menu fa fa-bars"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="navbar-right">
+            <div id="navbar-menu">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="javascript:alert('로그아웃')" class="icon-menu">
+                    <i class="icon-power"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </nav>
+      <!-- TopHeader Box ###### -->
+      <!-- ######  Left Menu -->
+      <div id="left-sidebar" class="sidebar">
+        <div class="navbar-brand">
+          <a href="/">
+            <span>설악불교문학관 ADMIN</span>
+          </a>
+          <button
+            type="button"
+            class="btn-toggle-offcanvas btn btn-sm float-right"
+          >
+            <i class="lnr lnr-menu icon-close"></i>
+          </button>
+        </div>
+        <div class="sidebar-scroll">
+          <nav id="left-sidebar-nav" class="sidebar-nav">
+            <ul id="main-menu" class="metismenu">
+              <li class="active open">
+                <a href="#myPage" class="has-arrow">
+                  <i class="icon-doc"></i>
+                  <span>메인관리</span>
+                </a>
+                <ul>
+                  <li class="active">
+                    <a href="/top-popup-list.html">상단팝업</a>
+                  </li>
+                  <li><a href="/top-banner-list.html">상단배너</a></li>
+                  <li><a href="index5.html">기념관&선원</a></li>
+                  <li><a href="index6.html">설악불교문학관</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#myPage" class="has-arrow">
+                  <i class="icon-doc"></i>
+                  <span>설악불교문학관</span>
+                </a>
+                <ul>
+                  <li><a href="#">작가</a></li>
+                  <li><a href="#">저서</a></li>
+                  <li><a href="#">저서_목차</a></li>
+                  <li><a href="#">작품</a></li>
+                  <li><a href="#">해설</a></li>
+                  <li><a href="#">소장자료</a></li>
+                  <li><a href="#">이미지</a></li>
+                  <li><a href="#">PDF</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="icon-doc"></i><span>만해기념관</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-doc"></i><span>무산기념관</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-doc"></i><span>커뮤니티</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-doc"></i><span>통계</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="icon-doc"></i><span>권한관리</span></a>
+              </li>
+              <li class="header">공통</li>
+              <li>
+                <a href="login.html">
+                  <i class="icon-lock"></i><span>로그인</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- Left Menu ###### -->
+      <div id="main-content">
+        <div class="container-fluid">
+          <div class="block-header">
+            <div class="row clearfix">
+              <div class="col-md-6 col-sm-12">
+                <h1>상단팝업</h1>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">메인관리</li>
+                    <li class="breadcrumb-item" aria-current="page">
+                      상단팝업
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      등록하기
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <!-- <div class="col-md-6 col-sm-12 text-right hidden-xs">
+                <a
+                  href="javascript:void(0);"
+                  class="btn btn-sm btn-primary"
+                  title=""
+                >
+                  등록
+                </a>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-xl-12 col-lg-12 col-md-7">
+            <div class="card">
+              <div class="body">
+                <div class="row clearfix">
+                  <!-- input box -->
+                  <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                      <b>NO.</b>
+                      <div class="input-group">
+                        <span class="input-text">1</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- input box -->
+                  <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                      <b>수정일시</b>
+                      <div class="input-group">
+                        <span class="input-text">2023.01.01 14:55</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- input box -->
+                  <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                      <b>등록자</b>
+                      <div class="input-group">
+                        <span class="input-text">admin01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- input box -->
+                  <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                      <b>상태</b>
+                      <div class="input-group">
+                        <select class="form-control">
+                          <option value="">- 선택 -</option>
+                          <option value="0">전체</option>
+                          <option value="1">노출중</option>
+                          <option value="2">노출예정</option>
+                          <option value="3">노출종료</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- input box -->
+                  <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                      <b>노출일시</b>
+                      <div class="input-group">
+                        <div
+                          class="input-group"
+                          id="datetimepicker1"
+                          data-td-target-input="nearest"
+                          data-td-target-toggle="nearest"
+                        >
+                          <input
+                            id="datetimepicker1Input"
+                            type="text"
+                            class="form-control"
+                            data-td-target="#datetimepicker1"
+                          />
+                          <span
+                            class="input-group-text"
+                            data-td-target="#datetimepicker1"
+                            data-td-toggle="datetimepicker"
+                          >
+                            <span class="fa-solid fa-calendar"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- input box -->
+                  <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                      <b>종료일시</b>
+                      <div class="input-group">
+                        <div
+                          class="input-group"
+                          id="datetimepicker2"
+                          data-td-target-input="nearest"
+                          data-td-target-toggle="nearest"
+                        >
+                          <input
+                            id="datetimepicker2Input"
+                            type="text"
+                            class="form-control"
+                            data-td-target="#datetimepicker2"
+                          />
+                          <span
+                            class="input-group-text"
+                            data-td-target="#datetimepicker2"
+                            data-td-toggle="datetimepicker"
+                          >
+                            <span class="fa-solid fa-calendar"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      <b>팝업 텍스트(30자 이하)</b>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="입력"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <b>링크주소</b>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="입력"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-round btn-default">
+                  취소
+                </button>
+                <button type="button" class="btn btn-round btn-primary">
+                  저장
+                </button>
+                &nbsp;&nbsp;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="./assets/bundles/libscripts.bundle.js"></script>
+    <script src="./assets/bundles/vendorscripts.bundle.js"></script>
+
+    <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="./assets/bundles/mainscripts.bundle.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/Eonasdan/tempus-dominus@master/dist/js/tempus-dominus.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      new tempusDominus.TempusDominus(
+        document.getElementById('datetimepicker1'),
+        {
+          display: {
+            components: {
+              seconds: false,
+              useTwentyfourHour: false,
+            },
+            icons: {
+              type: 'icons',
+              time: 'fa fa-solid fa-clock',
+              date: 'fa fa-solid fa-calendar',
+              up: 'fa fa-solid fa-arrow-up',
+              down: 'fa fa-solid fa-arrow-down',
+              previous: 'fa fa-solid fa-chevron-left',
+              next: 'fa fa-solid fa-chevron-right',
+              today: 'fa fa-solid fa-calendar-check',
+              clear: 'fa fa-solid fa-trash',
+              close: 'fas fa-solid fa-xmark',
+            },
+          },
+        }
+      );
+
+      new tempusDominus.TempusDominus(
+        document.getElementById('datetimepicker2'),
+        {
+          display: {
+            components: {
+              seconds: false,
+              useTwentyfourHour: false,
+            },
+            icons: {
+              type: 'icons',
+              time: 'fa fa-solid fa-clock',
+              date: 'fa fa-solid fa-calendar',
+              up: 'fa fa-solid fa-arrow-up',
+              down: 'fa fa-solid fa-arrow-down',
+              previous: 'fa fa-solid fa-chevron-left',
+              next: 'fa fa-solid fa-chevron-right',
+              today: 'fa fa-solid fa-calendar-check',
+              clear: 'fa fa-solid fa-trash',
+              close: 'fas fa-solid fa-xmark',
+            },
+          },
+        }
+      );
+    </script>
+  </body>
+</html>

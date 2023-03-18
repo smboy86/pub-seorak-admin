@@ -1,3 +1,16 @@
 a.text-black {
   color: black !important;
 }
+
+.input-group .input-text {
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+
+.form-control.date {
+  width: 22%;
+}
+
+.input-group-prepend.right {
+  margin-left: -1px;
+}
