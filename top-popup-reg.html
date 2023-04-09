@@ -42,6 +42,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/vendor/dropify/css/dropify.min.css" />
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./assets/css/seorak.css" />
@@ -320,6 +321,61 @@
                       </div>
                     </div>
                   </div>
+                  <div class="col-12">
+                    <b>파일업로드</b>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Upload</span>
+                      </div>
+                      <div class="custom-file">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="inputGroupFile01"
+                        />
+                        <label class="custom-file-label" for="inputGroupFile01"
+                          >Choose file</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <b>파일업로드 drag&drop</b>
+                    <div class="col-md-12">
+                      <div class="card">
+                        <div class="body">
+                          <input type="file" class="dropify" />
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="header">
+                          <h2>
+                            With event and default file
+                            <small>try to remove the image</small>
+                          </h2>
+                        </div>
+                        <div class="body">
+                          <input
+                            type="file"
+                            id="dropify-event"
+                            data-default-file="../assets/images/image-gallery/1.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="header">
+                          <h2>Disabled file upload</h2>
+                        </div>
+                        <div class="body">
+                          <input
+                            type="file"
+                            class="dropify"
+                            disabled="disabled"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <button type="button" class="btn btn-round btn-default">
                   취소
@@ -350,6 +406,7 @@
       src="https://cdn.jsdelivr.net/gh/Eonasdan/tempus-dominus@master/dist/js/tempus-dominus.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/vendor/dropify/js/dropify.js"></script>
 
     <script>
       new tempusDominus.TempusDominus(
@@ -399,6 +456,31 @@
           },
         }
       );
+
+      // 드래그 엔 드랍
+      $(function () {
+        $('.dropify').dropify();
+
+        var drEvent = $('#dropify-event').dropify();
+        drEvent.on('dropify.beforeClear', function (event, element) {
+          return confirm(
+            'Do you really want to delete "' + element.file.name + '" ?'
+          );
+        });
+
+        drEvent.on('dropify.afterClear', function (event, element) {
+          alert('File deleted');
+        });
+
+        $('.dropify-fr').dropify({
+          messages: {
+            default: 'Glissez-déposez un fichier ici ou cliquez',
+            replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+            remove: 'Supprimer',
+            error: 'Désolé, le fichier trop volumineux',
+          },
+        });
+      });
     </script>
   </body>
 </html>
