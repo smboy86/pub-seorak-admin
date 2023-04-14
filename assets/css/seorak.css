@@ -14,3 +14,8 @@ a.text-black {
 .input-group-prepend.right {
   margin-left: -1px;
 }
+
+.input-group.attr {
+  display: flex;
+  flex-direction: column;
+}
